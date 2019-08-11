@@ -1,0 +1,121 @@
+{% extends 'default.html' %}
+{% block title %}
+  Outline
+{% endblock %}
+
+{% block contents %}
+<div class="container">
+  <div class="media">
+    <div class="media-body">
+        <div class="alert alert-primary" role="alert">
+          <h3 class="mt-0">Technology Introduction</h3>
+          <p><h5>AWS EC2 ?</h5></p>
+          <p>When I start this project, I would like to use a VMFusion in MacOS to make a Web service. But I couldn't waste my MacBook for only hosting.</p>
+          <p>That's why I've chosen the AWS EC2 virtual machine that help me host anytime and anywhere.</p>
+        </div> 
+        <div class="alert alert-dark" role="alert">
+          <h3 class="mt-0">Integrated Development Environment</h3> 
+          <ul>OS : OS X Mojave, Linux Ubuntu 18.04 LTS </ul>
+          <ul>Python 3.7.3</ul>
+          <ul>DB : MariaDB, SQLite3</ul>
+          <ul>UI : Bootstrap</ul>
+        </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<h1 align="center">블록 다이어그램</h1>
+  <div class="container">
+      <div class="row pt-1 pb-1">
+          <div class="col-lg-12">
+              <h4 class="text-center">Block Diagram</h4>
+          </div>
+      </div>
+  </div>
+<div class="container">
+  <img src="../static/img/Outline.png" class="img-fluid" alt="Responsive image">
+</div>
+<br>
+<div class="container">
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            OS Detail
+          </button>
+        </h2>
+      </div>
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+	  Finishing the development in the OS X Mojave and I uploaded the files into the AWS EC2 by Github. There's one thing I sure regret. I had to develop in Docker image and insert it into the AWS EC2. It was more easiler than that I did for setting the system enviroment
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Python Detail
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+		Like I said in front of my page, I used Python for this project instead of Java. Because Python has some advantages than Java. Python is easy to develop and it copes with fast changes. So that I chose the Python for my first project. Of course I will start my second project with Java as soon as possible. Because it has advantages of maintenance and more systematization.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            DataBase
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+In this project, I tried to use two Databases for the comparison. SQLite is lighter than other RDBMS because it use the storage in the memory of software. So in the mass task it is improper. But it is very suitable for my first project Micro-web. In the other hand, I used also MariaDB for practicing Database Modeling and Database Normalization.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingFour">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            UI Detail
+          </button>
+        </h2>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+        <div class="card-body">
+		For the design of the Website, I used Bootstrap(=Framework) which makes us easiler to create, maintenance of the Website.
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<br>
+<br>
+<br>
+<h1 align="center">데이터베이스 모델링</h1>
+  <div class="container">
+      <div class="row pt-1 pb-1">
+          <div class="col-lg-12">
+              <h4 class="text-center">Database Modeling</h4>
+          </div>
+      </div>
+  </div>
+<div class="container">
+  <img src="../static/img/modeling.png" class="img-fluid" alt="Responsive image">
+</div>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}
+

@@ -1,0 +1,25 @@
+{% extends 'default.html' %}
+{% block title %}
+  Home
+{% endblock %}
+
+{% block contents %}
+<!--Jumbotron-->
+<!--Tip: https://www.w3schools.com/ -->
+
+<div class="container-fluid">
+    <div class="jumbotron" style="background-image: url('static/img/index.png')">
+        <h1 class="display-4" style="color:black">Welcome to Woohyun's WebSite</h1>
+        <p class="lead" style="color:black">Hello everyone, </p>
+        <p class="lead" style="color:black">You could find out my two projects with same topic in this website.</p>
+        <p class="lead" style="color:black"><ul><b>One :</b> Movie Management project.</ul></p>
+        <p class="lead" style="color:black"><ul><b>Two :</b> Movie KNN, K-Nearest Neighbors project.</ul></p>
+        <p class="lead" style="color:black">The aim of the project is, collecting the Cine data based on Python and Visualization after pre-processing of data, to provide a web service.</p>
+        <p class="lead" style="color:black">My slogan in this project is <b>"Make Micro-Web"</b>. I tried to use the simplest ways to create this Web service with various FrameWorks.</p>
+        <p class="lead" style="color:black">And the end of this project, I'll direct towards new project based on Java Spring.</p>
+        <hr class="my-4">
+        <p style="color:black">You can look over all my code that were used in this WebSite and two Projects in GitHub.</p>
+        <a class="btn btn-primary btn-lg" href="https://github.com/WoohyunSHIN/ML_Projet" role="button">GitHub</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'default.html' %}
+{% block title %}
+  suc
+{% endblock %}
+
+{% block contents %}
+<h1 align="center">KNN(k-Nearest Neighbors) 기계학습 결과</h1>
+  <div class="container">
+      <div class="row pt-1 pb-1">
+          <div class="col-lg-12">
+              <h4 class="text-center">k-Nearest Neighbors Machine Learning Algorithm's Result</h4>
+              <h6 class="text-center">Movie Recommendataion by Genre</h6>
+          </div>
+      </div>
+  </div>
+<br>
+<br>
+<div class="container-fluid">
+  <ul class="list-group">
+    <li class="list-group-item">[ 10 Recommendataion Movie in {{year}} ]</li>
+    {% for movie in movies %}
+    <ul class="list-group">
+      <li class="list-group-item">{{movie}}</li>
+    </ul>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

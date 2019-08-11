@@ -1,0 +1,96 @@
+{% extends 'default.html' %}
+{% block title %}
+  KNN
+{% endblock %}
+
+{% block contents %}
+<h1 align="center">KNN(k-Nearest Neighbors) 기계학습</h1>
+  <div class="container">
+      <div class="row pt-1 pb-1">
+          <div class="col-lg-12">
+              <h4 class="text-center">k-Nearest Neighbors Machine Learning Algorithm </h4>
+              <h6 class="text-center">Movie Recommendataion by Genre</h6>
+          </div>
+      </div>
+  </div>
+<br>
+<br>
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      kNN(k-Nearest Neighbors)
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Euclidian Distance</h5>
+      <p class="card-text">In pattern recognition, the k-nearest neighbors algorithm (kNN) is a non-parametric method used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space. The output depends on whether kNN is used for classification or regression. kNN is a type of instance-based learning, or lazy learning, where the function is only approximated locally and all computation is deferred until classification.</p>
+    </div>
+    <img src='../static/img/Euclidian.png'>
+  </div>
+</div>
+
+<br>
+<br>
+<div class="container-fluid">
+<h3 class="text-center">Select Your Preferences (Multi-Choice)</h3>
+</div>
+<br>
+<form class="form-inline" method="post" action="/test">
+<div class="container-fluid">
+  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
+  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="chk_info">
+    <option selected>Year...</option>
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+    <option value="2003">2003</option>
+    <option value="2004">2004</option>
+    <option value="2004">2004</option>
+    <option value="2006">2006</option>
+    <option value="2007">2007</option>
+    <option value="2008">2008</option>
+    <option value="2009">2009</option>
+    <option value="2010">2010</option>
+    <option value="2011">2011</option>
+    <option value="2012">2012</option>
+    <option value="2013">2013</option>
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+  </select>
+</div>
+<br>
+<div class="container">
+  <input type="checkbox" name="chk_info" value="drama">drama
+  <input type="checkbox" name="chk_info" value="fantasy">fantasy
+  <input type="checkbox" name="chk_info" value="western">western
+  <input type="checkbox" name="chk_info" value="horror">horror
+  <input type="checkbox" name="chk_info" value="romance">romance
+  <input type="checkbox" name="chk_info" value="adventure">adventure
+  <input type="checkbox" name="chk_info" value="thriller">thriller
+  <input type="checkbox" name="chk_info" value="noir">noir
+  <input type="checkbox" name="chk_info" value="cult">cult
+  <input type="checkbox" name="chk_info" value="documentary">documentary
+  <input type="checkbox" name="chk_info" value="comedic">comedic
+  <input type="checkbox" name="chk_info" value="family">family
+  <input type="checkbox" name="chk_info" value="mystery">mystery
+  <input type="checkbox" name="chk_info" value="war">war
+  <input type="checkbox" name="chk_info" value="animation">animation
+  <input type="checkbox" name="chk_info" value="crime">crime
+  <input type="checkbox" name="chk_info" value="SF">SF
+  <input type="checkbox" name="chk_info" value="action">action
+  <input type="checkbox" name="chk_info" value="heroism">heroism
+  <input type="checkbox" name="chk_info" value="sexual">sexual
+  <input type="checkbox" name="chk_info" value="suspense">msuspense
+  <input type="checkbox" name="chk_info" value="epic">epic
+  <input type="checkbox" name="chk_info" value="blackcomedic">blackcomedic
+  <input type="checkbox" name="chk_info" value="experiment">experiment
+</div>
+  <br>
+  <button type="reset" class="btn btn-primary my-1">Reset</button>
+  <button type="submit" class="btn btn-primary my-1">Submit</button>
+</form>
+{% endblock %}
